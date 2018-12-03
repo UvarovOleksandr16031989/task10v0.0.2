@@ -1,6 +1,8 @@
 .table
   position: relative
-  top: -90px
+  top: -60px
+  +media(1023)
+    margin-bottom: -40px
 
 
   &__container
@@ -37,6 +39,7 @@
     &--mobile
       display: none
       text-decoration: underline
+      padding: 0
       +media(1023)
         display: block
         text-align: center
