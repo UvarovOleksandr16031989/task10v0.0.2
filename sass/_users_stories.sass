@@ -51,8 +51,7 @@
     padding: 18px 24px
     +media(1023)
       padding: 15px 16px
-      px
-
+    
 
   &__logo
     display: inline-block
@@ -175,7 +174,6 @@
 
 
 
-
   &__figure
     border-radius: 6px
     min-width: 150px
@@ -198,10 +196,8 @@
     &:active,
     &:focus
       background: #5E0013
-
     +media(1440)
       line-height: 40px
-
 
 
 
@@ -238,3 +234,30 @@
       flex-direction: column
       padding: 16px 0 0 0
       margin: 0 auto
+
+      
+  &__photo
+    display: inline-block
+    &--vh
+      content: url("../images/portfolio/user_vh.jpg")
+      +media(1023)
+        content: url("../images/portfolio/user_vh-tablet.jpg")
+        width: 100%
+    &--ac
+      content: url("../images/portfolio/user_ac.jpg")
+      +media(1023)
+        width: 100%
+        content: url("../images/portfolio/user_ac-tablet.jpg")
+    &--rt
+      content: url("../images/portfolio/user_rt.jpg")
+      +media(1023)
+        width: 100%
+        content: url("../images/portfolio/user_rt-tablet.jpg")
+    &--ls
+      content: url("../images/portfolio/user_ls.jpg")
+      +media(1023)
+        width: 100%
+        content: url("../images/portfolio/user_ls-tablet.jpg")
+
+
+      
