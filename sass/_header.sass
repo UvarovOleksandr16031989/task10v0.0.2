@@ -29,7 +29,7 @@
     max-width: 71%
     transition: .5s
     +media(1023)
-      position: absolute
+      position: fixed
       flex-direction: column
       background: rgba(0, 0, 0, 1)
       justify-content: flex-start
@@ -57,8 +57,12 @@
         height: 2px
         bottom: -18px
         left: 0
+        display: inline-block
     +media(1023)
       padding: 30px 0
+      &:hover
+        &:after
+          display: none
 
 
   &__container
@@ -96,9 +100,11 @@
 .burger
   display: none
   padding-left: 24px
-  position: relative
+  position: absolute
   z-index: 105
-  height: 12px
+  right: 16px
+  &.is-active
+    position: fixed
   +media(1024)
     display: block
 
